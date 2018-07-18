@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name ="viewport" content="width=device-width", initial-scale="1">
+	<title>Logged In</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <style type="text/css">
+		body {
+           background: url(IMG-20180215-WA0041.jpg);
+           background-size: cover;
+           background-position: center; 
+        }
+        body,
+        html {
+           width: 100%;
+           height: 100%;
+           font-family: "Lato";
+           color: black;
+   	    }	
+   	     h1 {
+	       font-weight: 700;
+	       font-size: 5em;
+        }
+        hr {
+           width: 400px;
+           border-top: 1px solid #f8f8f8;
+           border-bottom: 1px solid rgba(0,8,8,0.5);
+            font-color:white;
+        }
+        .content{
+	       padding-top: 25%;
+	       text-align: center;
+           text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                        0px 8px 3px rgba(0,0,0,0.1),
+                        0px 18px 13px rgba(0,0,0,0.1);
+           font-color:white;
+        }
+        .button {
+           clear: left;
+           width: 100%;
+           height: 32px;
+           font-size: 13px;
+        }
+        .navbar{
+           background: #2c3e58;
+        }
+        .navbar-default .navbar-brand {
+ 	       color: white;
+        }
+        .navbar-default .navbar-nav>li>a {
+ 	       color: white;
+        }
+
+	</style>
+</head>
+<body>
+<!-- navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+           <!-- logout -->
+           <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Log Out  <i class="fa fa-user"></i><strong class="caret"></strong></a>
+            <div class="dropdown-menu" >
+            <form>
+              <input class="button" type="submit" name="commit" onclick="check(this.form1)" value="Log Out">
+            </form>
+            <script language="javascript">
+		     function check(form1){
+			  window.open('page3.html')
+			}
+			</script>
+            </div>
+           </li>
+           </ul>
+    </div>
+</div>
+</nav>
+<!-- content -->
+	<div class="container">
+ 	 <div class="row">
+ 		<div class="col-lg-12">
+ 			<div class="content">
+ 				<h1>Welcome!</h1>
+	            <h3>You are logged in</h3>
+ 				<hr>
+ 				<button class="btn btn-default btn-lg"> Get Started!</button>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+	
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta name ="viewport" content="width=device-width", initial-scale="1">
+<title>Picture Gallery</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Chela+One&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+<script src="Page1.js"></script>
+<style type="text/css">
+body{
+	padding: 70px;
+}
+ .navbar{
+        background: #2c3e58;
+    }
+ .jumbotron {
+    color: #070B48;
+    background:#E4DDE2;
+    text-align: center;
+    font-family:'Chela One', cursive;
+    margin: 30px 0 40px 0;
+   }
+.navbar-default .navbar-brand {
+ 	color: white;
+ }
+ .navbar-default .navbar-nav>li>a {
+ 	color: white;
+ }
+ .thumbnail img{
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+ }
+ p{
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+ }
+ .dropdown-menu{
+  padding: 15px;
+ }
+ input{
+  margin-bottom: 15px;
+  size: 30;
+ }
+ .btn {
+  clear: left;
+  width: 100%;
+  height: 32px;
+  font-size: 13px;
+}
+a:visited{
+  color: purple;
+}
+</style>
+</head>
+
+<body>
+<!--navbar-->
+ <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="page1.html" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
+        <ul class="nav navbar-nav">
+         <li><a href="page4.html">About</a></li>
+         <!-- contact -->
+         <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Contact<strong class="caret"></strong></a>
+          <div class="dropdown-menu" >
+           Call:+91758963215
+           Mail:gallery123@gmail.com 
+          </div>
+         </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- signup -->
+          <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign Up  <i class="fa fa-user-plus"></i><strong class="caret"></strong></a>
+          <div class="dropdown-menu" >
+            <form>
+               <input type="text" name="userid" placeholder="Username" required>
+               <input type="email" name="email" placeholder="Email address" required>
+               <input type="password" name="pswrd" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters">
+               <input type="checkbox" name="checkbox" required>  I agree to the terms and conditions
+               <input class="btn" type="submit" name="commit" value="Sign Up">
+            </form>
+          </div>
+         </li>
+         <!--login-->
+          <li class="dropdown">
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Log In  <i class="fa fa-user"></i><strong class="caret"></strong></a>
+          <div class="dropdown-menu" >
+            <form>
+               <input type="text" name="userid" placeholder="Username" required>
+               <input type="password" name="pswrd" placeholder="Password" required>
+               <input class="btn" type="submit" name="commit" onclick="check(this.form)" value="Log In">
+            </form>
+          </div>
+         </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!--jumbotron-->
+<div class="container">
+ <div class="jumbotron">
+  <h1><i class="fa fa-camera-retro"></i> The Picture Gallery</h1>
+  </div>  
+   <p> How do you feel when you sit down with an old photo album? Do you feel immense joy as you recollect the beautiful memories? Looking at the old pictures we are taken back to the time that picture was clicked. We relive that moment. We click several pictures during the day. Some turn out to be really pretty.
+    It is always suggested that wherever you go, whenever you go, take a camera along. You never know, maybe there's a moment you will want to capture.   
+   </p> 
+   <p>This is a picture gallery. You can also add images clicked by you in this gallery and earn credit. By adding your images to this website you can show your work to the world.</p><p><strong>So, stop thinking and start clicking!!</strong> </p>
+   <p> To add your image <a href="#" onclick="alert('You need to Log In');">click here.</a></p>  
+   <p> Here are some beautiful images from my album!!</p> 
+    <!--grid-->
+ <div class="row ">
+ 	 <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20171013-WA0011.jpg">
+   </div>
+   </div><div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20171013-WA0010.jpg">
+   </div>
+   </div>
+   <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20171013-WA0009.jpg">
+   </div>
+   </div> 
+   <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20180228-WA0015.jpg">
+   </div>
+   </div>
+   <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20171002-WA0004.jpg">
+   </div>
+   </div>
+   <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20180228-WA0024.jpg">
+   </div>
+   </div> 
+   <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-1.jpg">
+   </div>
+   </div>
+   <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20171012-WA0064.jpg">
+   </div>
+   </div> <div class="col-lg-4 col-md-6 col-sm-12">
+   <div class="thumbnail">
+       <img src="IMG-20180211-WA0000.jpg">
+   </div>
+   </div> 
+ </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
